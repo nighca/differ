@@ -1,0 +1,66 @@
+@import "global.less";
+
+body{
+	color: #333;
+    font-family: "Helvetica Neue", Helvetica, arial, "Microsoft YaHei";
+}
+
+.center{
+	position: relative;
+
+	width: 960px;
+	margin: 0 auto;
+}
+
+.inner-header, .main, .inner-footer{
+	.center;
+}
+
+@media screen and (min-width:1280px) and (max-width:1440px){
+	.inner-header, .main, .inner-footer{
+		width: 1280px;
+	}
+}
+
+@media screen and (min-width:1440px){
+	.inner-header, .main, .inner-footer{
+		width: 1440px;
+	}
+}
+
+.header{
+	border-bottom: 1px solid #eee;
+
+	.title{
+		padding: 20px 0;
+		font-size: 40px;
+	}
+}
+
+.main{
+	margin-top: 20px;
+	padding: 20px 0;
+	min-height: 200px;
+
+	.upload-wrapper{
+		p{
+			margin-bottom: 10px;
+		}
+	}
+
+	.diff-wrapper{
+		margin-top: 20px;
+	}
+}
+
+.footer{
+	margin-top: 20px;
+	padding: 20px 0;
+	height: 40px;
+
+	.about{
+		text-align: center;
+		font-size: 12px;
+		color: #666;
+	}
+}

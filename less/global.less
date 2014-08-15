@@ -1,0 +1,105 @@
+@import "define.less";
+
+*{
+	margin: 0;
+	padding: 0;
+
+	-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: content-box;    /* Firefox, other Gecko */
+	box-sizing: content-box;         /* Opera/IE 8+ */
+
+    &:focus{
+        outline: none;
+    }
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+input{
+    &:focus{
+        outline: none;
+    }
+}
+
+ul, ol{
+    list-style: none;
+}
+
+input[type="text"], input[type="password"], div[contentEditable="true"], button{
+    padding: 9px 8px;
+    margin: 0;
+
+    &:-moz-placeholder { color:#a8a8a8;  }
+    &::-moz-input-placeholder { color:#a8a8a8;  }
+    &::-webkit-input-placeholder { color:#a8a8a8; }
+
+    &.small{
+        width: 60px;
+        padding: 5px 8px;
+    }
+
+    &.large{
+        width: 320px;
+    }
+
+    font-size: 14px;
+    border-style: none;
+    background: none;
+    background-color: #f0f0f0;
+
+    &:focus, &.active{
+        outline: none;
+    }
+}
+
+button{
+    color: #f0f0f0;
+    background-color: @baseColor;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover{
+    	background-color: darken(@baseColor, 5%);
+    }
+
+    &:active{
+        color: #fff;
+        background-color: darken(@baseColor, 15%);
+    }
+
+    &:disabled{
+        color: #ccc;
+    }
+}
+
+select{
+    border-style: none;
+    border: 1px solid @baseColor;
+    border-top: 1px solid rgb(180,180,180);
+    background: none;
+    background-color: #fff;
+    color: rgb(88,88,88);
+    font-size: 12px;
+
+    &:focus{
+        outline: none;
+        border-color: @baseColor;
+    }
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+    &:visited{
+        color: inherit;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

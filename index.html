@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Differ</title>
+	<link rel="stylesheet" type="text/css" href="./css/differ.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<script type="text/javascript" src="./js/util.js"></script>
+	<script type="text/javascript" src="./dep/diff-merge/dist/diff.min.js"></script>
+	<script type="text/javascript" src="./js/differ.js"></script>
+</head>
+<body>
+
+<header class="header">
+	<div class="inner-header">
+		<h1 class="title">
+			<a href="./index.html">Differ</a>
+		</h1>
+	</div>
+</header>
+
+<div class="main">
+	<div class="upload-wrapper">
+		<p>
+			<input id="file1" type="file"/>
+			<input id="file2" type="file"/>
+		</p>
+		<p>
+			<button id="do-diff">DO DIFF!</button>
+		</p>
+	</div>
+	<div id="diff-wrapper" class="diff-wrapper"></div>
+</div>
+
+<footer class="footer">
+	<div class="inner-footer">
+		<p class="about"></p>
+	</div>
+</footer>
+
+</body>
+
+<script type="text/javascript" src="./js/index.js"></script>
+
+</html>
