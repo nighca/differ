@@ -11,6 +11,14 @@ A react component for code diff.
 
 ### Usage
 
+```shell
+npm i react-differ --save
+
+# Or
+
+yarn add react-differ
+```
+
 ```javascript
 import React, { Component } from 'react'
 import Differ from 'react-differ'
