@@ -1,4 +1,31 @@
-differ
+recat-differ
 ======
 
-web tool to differ files' content
+A react component for code diff.
+
+### Sample
+
+[Demo](http://differ.nighca.me/)
+
+[Sample Code](https://github.com/nighca/differ/blob/master/sample/src/App.js)
+
+### Usage
+
+```javascript
+import React, { Component } from 'react'
+import Differ from 'react-differ'
+
+const from = `import React, { Component } from 'react'
+import Differ from 'react-differ'`
+
+const to = `import React from 'react'
+import Differ from 'react-differ'`
+
+class App extends Component {
+  render() {
+    return (
+      <Differ from={from} to={to} />
+    )
+  }
+}
+```
