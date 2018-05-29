@@ -1,4 +1,4 @@
-recat-differ
+react-differ
 ======
 
 A react component for code diff.
